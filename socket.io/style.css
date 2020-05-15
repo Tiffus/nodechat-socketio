@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+html #popup-container,
+body #popup-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html #popup-container #popup-form,
+body #popup-container #popup-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+html #message-form,
+body #message-form {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+html #message-form input,
+body #message-form input {
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+
+html #message-form button,
+body #message-form button {
+  background: #ffa600;
+  border: none;
+  padding: 10px;
+}
+
+#conversation-container {
+  overflow-y: auto;
+  height: calc(100% - 50px);
+}
+
+#conversation-container #conversation {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#conversation-container #conversation li {
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=style.css.map */

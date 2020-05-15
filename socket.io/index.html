@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <div id="popup-container">
+        <form action="" id="popup-form">
+            <h2>Choisir un pseudo</h2>
+            <input id="pseudo" autocomplete="off" />
+            <button>Send</button>
+        </form>
+    </div>
+    <div id="conversation-container">
+        <ul id="conversation">
+
+        </ul>
+    </div>
+    <form action="" id="message-form">
+        <input id="message" autocomplete="off" />
+        <button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
